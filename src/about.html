@@ -1,36 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - CreativeTeam</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="../index.html" class="nav-logo">CreativeTeam</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">Home</a>
+  <body
+    class="bg-[#f0f4f8] text-[#333] m-0 pt-16 md:pt-20 flex flex-col min-h-screen box-border"
+  >
+    <nav
+      class="bg-white py-3 md:py-[15px] fixed top-0 left-0 w-full z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.1)] border-b-[3px] border-[#4facfe]"
+    >
+      <div
+        class="w-[90%] max-w-[1200px] mx-auto flex justify-between items-center"
+      >
+        <a
+          href="../index.html"
+          class="text-[#2c3e50] font-bold text-xl md:text-2xl no-underline"
+        >
+          CreativeTeam
+        </a>
+
+        <ul class="hidden md:flex list-none gap-[30px] m-0 p-0">
+          <li>
+            <a
+              href="../index.html"
+              class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
+            >
+              Home
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+          <li>
+            <a
+              href="about.html"
+              class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
+            >
+              About Us
+            </a>
+          </li>
+        </ul>
+
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-[#2c3e50] text-2xl focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden w-full bg-white border-t border-gray-200 mt-3"
+      >
+        <ul class="flex flex-col p-4 space-y-3">
+          <li>
+            <a
+              href="../index.html"
+              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+            >
+              About Us
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main>
-      <div class="content-section about-page">
-        <h1>Our Story</h1>
-        <p>
+    <main class="flex-grow">
+      <div
+        class="w-[95%] md:w-[90%] max-w-[900px] my-6 md:my-10 mx-auto p-6 md:p-8 lg:p-10 bg-white rounded-[15px] shadow-[0_10px_20px_rgba(0,0,0,0.08)] text-center"
+      >
+        <h1
+          class="text-3xl md:text-4xl lg:text-[2.5rem] text-[#2c3e50] mb-4 md:mb-6 font-semibold"
+        >
+          Our Story
+        </h1>
+
+        <p
+          class="leading-[1.7] md:leading-[1.8] text-[#34495e] text-left text-sm md:text-base mb-4 md:mb-5"
+        >
           Welcome to CreativeTeam! We started as a small group of friends with a
           shared passion for design and technology. We believe that great things
           are built by teams who are not only skilled but also deeply care about
           the impact of their work.
         </p>
-        <p>
+
+        <p
+          class="leading-[1.7] md:leading-[1.8] text-[#34495e] text-left text-sm md:text-base"
+        >
           Our mission is to combine beautiful aesthetics with flawless
           functionality to create digital experiences that are not just useful,
           but memorable. From the initial concept to the final line of code, we
@@ -40,8 +116,26 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 CreativeTeam. All Rights Reserved.</p>
+    <footer class="bg-[#2c3e50] text-[#ecf0f1] text-center py-4 md:py-5">
+      <p class="text-sm md:text-base m-0">
+        &copy; 2025 CreativeTeam. All Rights Reserved.
+      </p>
     </footer>
+
+    <script>
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          const icon = mobileMenuBtn.querySelector("i");
+          if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
