@@ -17,20 +17,21 @@
     </style>
   </head>
   <body
-    class="bg-[#f0f4f8] text-[#333] m-0 pt-20 flex flex-col min-h-screen box-border"
+    class="bg-[#f0f4f8] text-[#333] m-0 pt-16 md:pt-20 flex flex-col min-h-screen box-border"
   >
     <nav
-      class="bg-white py-[15px] fixed top-0 left-0 w-full z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.1)] border-b-[3px] border-[#4facfe]"
+      class="bg-white py-3 md:py-[15px] fixed top-0 left-0 w-full z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.1)] border-b-[3px] border-[#4facfe]"
     >
       <div
         class="w-[90%] max-w-[1200px] mx-auto flex justify-between items-center"
       >
         <a
           href="../../index.html"
-          class="text-[#2c3e50] font-bold text-2xl no-underline"
+          class="text-[#2c3e50] font-bold text-xl md:text-2xl no-underline"
           >CreativeTeam</a
         >
-        <ul class="list-none flex gap-[30px] m-0 p-0">
+
+        <ul class="hidden md:flex list-none gap-[30px] m-0 p-0">
           <li>
             <a
               href="../../index.html"
@@ -46,30 +47,62 @@
             >
           </li>
         </ul>
+
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-[#2c3e50] text-2xl focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden w-full bg-white border-t border-gray-200 mt-3"
+      >
+        <ul class="flex flex-col p-4 space-y-3">
+          <li>
+            <a
+              href="../../index.html"
+              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../about.html"
+              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+              >About Us</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
     <main class="flex-grow">
       <div
-        class="max-w-[900px] my-10 mx-auto p-10 bg-white rounded-[15px] shadow-[0_10px_20px_rgba(0,0,0,0.08)]"
+        class="w-[95%] md:w-[90%] max-w-[900px] my-5 md:my-10 mx-auto p-5 md:p-8 lg:p-10 bg-white rounded-[15px] shadow-[0_10px_20px_rgba(0,0,0,0.08)]"
       >
-        <div class="flex items-center gap-10">
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
           <img
             src="../resources/images/TriTran.jpg"
             alt="Profile image for Trần Thanh Trí"
-            class="w-[250px] h-[250px] rounded-full object-cover border-8 border-[#f0f4f8]"
+            class="w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px] rounded-full object-cover border-4 md:border-8 border-[#f0f4f8] flex-shrink-0"
           />
 
-          <div class="flex-1">
-            <h1 class="mt-0 text-[#2c3e50] text-4xl font-semibold">
+          <div class="flex-1 w-full">
+            <h1
+              class="mt-0 text-[#2c3e50] text-2xl md:text-3xl lg:text-4xl font-semibold text-center md:text-left"
+            >
               Trần Thanh Trí
             </h1>
 
             <div
-              class="flex flex-wrap gap-5 mt-5 p-[15px] bg-[#f0f4f8] rounded-lg"
+              class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-5 mt-4 md:mt-5 p-3 md:p-[15px] bg-[#f0f4f8] rounded-lg"
             >
               <span
-                class="text-base text-[#34495e] font-semibold flex items-center"
+                class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start"
               >
                 <i
                   class="fa-solid fa-id-card text-[#4facfe] mr-2 w-5 text-center"
@@ -77,37 +110,45 @@
                 23127503
               </span>
               <span
-                class="text-base text-[#34495e] font-semibold flex items-center"
+                class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start break-all"
               >
                 <i
-                  class="fa-solid fa-envelope text-[#4facfe] mr-2 w-5 text-center"
+                  class="fa-solid fa-envelope text-[#4facfe] mr-2 w-5 text-center flex-shrink-0"
                 ></i>
-                tranthanhtri23022005@gmail.com
+                <span class="break-all">tranthanhtri23022005@gmail.com</span>
               </span>
             </div>
 
-            <div class="mt-5 flex gap-[15px]">
+            <div
+              class="mt-4 md:mt-5 flex flex-col sm:flex-row gap-3 md:gap-[15px]"
+            >
               <a
                 href="https://github.com/Triszz"
                 target="_blank"
-                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
+                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
               >
                 <i class="fa-brands fa-github mr-2"></i> GitHub
               </a>
               <a
                 href="https://www.facebook.com/thanh.tri.820228/"
                 target="_blank"
-                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
+                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
               >
                 <i class="fa-brands fa-facebook mr-2"></i> Facebook
               </a>
             </div>
 
-            <div class="mt-[25px] border-t-2 border-[#f0f4f8] pt-[15px]">
-              <h3 class="text-[#2c3e50] mb-[10px] text-xl font-semibold">
+            <div
+              class="mt-5 md:mt-[25px] border-t-2 border-[#f0f4f8] pt-4 md:pt-[15px]"
+            >
+              <h3
+                class="text-[#2c3e50] mb-2 md:mb-[10px] text-lg md:text-xl font-semibold"
+              >
                 About Me
               </h3>
-              <p class="leading-[1.8] text-[#34495e]">
+              <p
+                class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
+              >
                 As a third-year Software Engineering student, I'm captivated by
                 the process of bringing ideas to life through web design and
                 development. I have a deep passion for both crafting intuitive
@@ -117,10 +158,14 @@
                 challenging and innovative projects.
               </p>
 
-              <h3 class="text-[#2c3e50] mb-[10px] mt-4 text-xl font-semibold">
+              <h3
+                class="text-[#2c3e50] mb-2 md:mb-[10px] mt-4 text-lg md:text-xl font-semibold"
+              >
                 Personal Interests
               </h3>
-              <p class="leading-[1.8] text-[#34495e]">
+              <p
+                class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
+              >
                 When I'm not coding, I like to relax with a good sci-fi movie or
                 dive into the world of strategy games. I also stay active with a
                 weekly game of badminton with my friends.
@@ -131,8 +176,22 @@
       </div>
     </main>
 
-    <footer class="bg-[#2c3e50] text-[#ecf0f1] text-center py-5">
-      <p>&copy; 2025 CreativeTeam. All Rights Reserved.</p>
+    <footer class="bg-[#2c3e50] text-[#ecf0f1] text-center py-4 md:py-5">
+      <p class="text-sm md:text-base">
+        &copy; 2025 CreativeTeam. All Rights Reserved.
+      </p>
     </footer>
+
+    <script>
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const icon = mobileMenuBtn.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
+      });
+    </script>
   </body>
 </html>
