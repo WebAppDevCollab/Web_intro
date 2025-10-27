@@ -1,238 +1,249 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Võ Thành Nhân - Team Member</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
-  </head>
-  <body
-    class="bg-[#f0f4f8] text-[#333] m-0 pt-16 md:pt-20 flex flex-col min-h-screen box-border"
-  >
-    <nav
-      class="bg-white py-3 md:py-[15px] fixed top-0 left-0 w-full z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.1)] border-b-[3px] border-[#4facfe]"
-    >
-      <div
-        class="w-[90%] max-w-[1200px] mx-auto flex justify-between items-center"
-      >
-        <a
-          href="../../index.html"
-          class="text-[#2c3e50] font-bold text-xl md:text-2xl no-underline"
-          >CreativeTeam</a
-        >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Võ Thành Nhân - Team Member</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+			body {
+				font-family: 'Poppins', sans-serif;
+			}
+		</style>
+	</head>
+	<body
+		class="bg-[#f0f4f8] text-[#333] m-0 pt-16 md:pt-20 flex flex-col min-h-screen box-border"
+	>
+		<nav
+			class="bg-white py-3 md:py-[15px] fixed top-0 left-0 w-full z-[1000] shadow-[0_2px_10px_rgba(0,0,0,0.1)] border-b-[3px] border-[#4facfe]"
+		>
+			<div
+				class="w-[90%] max-w-[1200px] mx-auto flex justify-between items-center"
+			>
+				<a
+					href="../../index.html"
+					class="text-[#2c3e50] font-bold text-xl md:text-2xl no-underline"
+					>CreativeTeam</a
+				>
 
-        <ul class="hidden md:flex list-none gap-[30px] m-0 p-0">
-          <li>
-            <a
-              href="../../index.html"
-              class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="../about.html"
-              class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
-              >About Us</a
-            >
-          </li>
-        </ul>
+				<ul class="hidden md:flex list-none gap-[30px] m-0 p-0">
+					<li>
+						<a
+							href="../../index.html"
+							class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							href="../about.html"
+							class="text-[#34495e] no-underline font-semibold pb-[5px] border-b-[3px] border-transparent transition-all duration-300 ease-in-out hover:text-[#4facfe] hover:border-[#4facfe]"
+							>About Us</a
+						>
+					</li>
+				</ul>
 
-        <button
-          id="mobile-menu-btn"
-          class="md:hidden text-[#2c3e50] text-2xl focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
+				<button
+					id="mobile-menu-btn"
+					class="md:hidden text-[#2c3e50] text-2xl focus:outline-none"
+					aria-label="Toggle menu"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
 
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden w-full bg-white border-t border-gray-200 mt-3"
-      >
-        <ul class="flex flex-col p-4 space-y-3">
-          <li>
-            <a
-              href="../../index.html"
-              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="../about.html"
-              class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
-              >About Us</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+			<div
+				id="mobile-menu"
+				class="hidden md:hidden w-full bg-white border-t border-gray-200 mt-3"
+			>
+				<ul class="flex flex-col p-4 space-y-3">
+					<li>
+						<a
+							href="../../index.html"
+							class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							href="../about.html"
+							class="block text-[#34495e] no-underline font-semibold py-2 px-4 rounded transition-all duration-300 ease-in-out hover:bg-[#f0f4f8] hover:text-[#4facfe]"
+							>About Us</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-    <main class="flex-grow">
-      <div
-        class="w-[95%] md:w-[90%] max-w-[900px] my-5 md:my-10 mx-auto p-5 md:p-8 lg:p-10 bg-white rounded-[15px] shadow-[0_10px_20px_rgba(0,0,0,0.08)]"
-      >
-        <div
-          class="flex flex-col md:flex-row items-start gap-6 md:gap-10"
-        >
-          <img
-            src="../resources/images/NhanVo.jpg"
-            alt="Profile image for Võ Thành Nhân"
-            class="w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px] rounded-full object-cover border-4 md:border-8 border-[#f0f4f8] flex-shrink-0 mx-auto md:mx-0"
-          />
+		<main class="flex-grow">
+			<div
+				class="w-[95%] md:w-[90%] max-w-[900px] my-5 md:my-10 mx-auto p-5 md:p-8 lg:p-10 bg-white rounded-[15px] shadow-[0_10px_20px_rgba(0,0,0,0.08)]"
+			>
+				<div
+					class="flex flex-col md:flex-row items-start gap-6 md:gap-10"
+				>
+					<img
+						src="../resources/images/NhanVo.jpg"
+						alt="Profile image for Võ Thành Nhân"
+						class="w-[180px] h-[180px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px] rounded-full object-cover border-4 md:border-8 border-[#f0f4f8] flex-shrink-0 mx-auto md:mx-0"
+					/>
 
-          <div class="flex-1 w-full">
-            <h1
-              class="mt-0 text-[#2c3e50] text-2xl md:text-3xl lg:text-4xl font-semibold text-center md:text-left"
-            >
-              Võ Thành Nhân
-            </h1>
+					<div class="flex-1 w-full">
+						<h1
+							class="mt-0 text-[#2c3e50] text-2xl md:text-3xl lg:text-4xl font-semibold text-center md:text-left"
+						>
+							Võ Thành Nhân
+						</h1>
 
-            <div
-              class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-5 mt-4 md:mt-5 p-3 md:p-[15px] bg-[#f0f4f8] rounded-lg"
-            >
-              <span
-                class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start"
-              >
-                <i
-                  class="fa-solid fa-id-card text-[#4facfe] mr-2 w-5 text-center"
-                ></i>
-                23127533
-              </span>
-              <span
-                class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start break-all"
-              >
-                <i
-                  class="fa-solid fa-envelope text-[#4facfe] mr-2 w-5 text-center flex-shrink-0"
-                ></i>
-                <span class="break-all">vtnhan23@clc.fitus.edu.vn</span>
-              </span>
-            </div>
+						<div
+							class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-5 mt-4 md:mt-5 p-3 md:p-[15px] bg-[#f0f4f8] rounded-lg"
+						>
+							<span
+								class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start"
+							>
+								<i
+									class="fa-solid fa-id-card text-[#4facfe] mr-2 w-5 text-center"
+								></i>
+								23127533
+							</span>
+							<span
+								class="text-sm md:text-base text-[#34495e] font-semibold flex items-center justify-center sm:justify-start break-all"
+							>
+								<i
+									class="fa-solid fa-envelope text-[#4facfe] mr-2 w-5 text-center flex-shrink-0"
+								></i>
+								<span class="break-all"
+									>vtnhan23@clc.fitus.edu.vn</span
+								>
+							</span>
+						</div>
 
-            <div
-              class="mt-4 md:mt-5 flex flex-col sm:flex-row gap-3 md:gap-[15px]"
-            >
-              <a
-                href="https://github.com/vtnHAN-SOLO"
-                target="_blank"
-                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
-              >
-                <i class="fa-brands fa-github mr-2"></i> GitHub
-              </a>
-              <a
-                href="https://www.facebook.com/nhan.vo.324265"
-                target="_blank"
-                class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
-              >
-                <i class="fa-brands fa-facebook mr-2"></i> Facebook
-              </a>
-            </div>
+						<div
+							class="mt-4 md:mt-5 flex flex-col sm:flex-row gap-3 md:gap-[15px]"
+						>
+							<a
+								href="https://github.com/vtnHAN-SOLO"
+								target="_blank"
+								class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
+							>
+								<i class="fa-brands fa-github mr-2"></i> GitHub
+							</a>
+							<a
+								href="https://www.facebook.com/nhan.vo.324265"
+								target="_blank"
+								class="no-underline text-white bg-[#34495e] py-[10px] px-[15px] rounded-[5px] font-semibold inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#4facfe] hover:-translate-y-[2px] hover:shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
+							>
+								<i class="fa-brands fa-facebook mr-2"></i>
+								Facebook
+							</a>
+						</div>
 
-            <div
-              class="mt-5 md:mt-[25px] border-t-2 border-[#f0f4f8] pt-4 md:pt-[15px]"
-            >
-              <h3
-                class="text-[#2c3e50] mb-2 md:mb-[10px] text-lg md:text-xl font-semibold"
-              >
-                About Me
-              </h3>
-              <p
-                class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
-              >
-                My name is Võ Thành Nhân. I'm 20 years old. My house is in the
-                northeast section of Hồ Chí Minh city, and I am not married. I am
-                a student at HCMUS, and I get home every day by 9 PM at the
-                latest. I don't smoke, but I occasionally drink. I'm in bed by 11
-                PM, and make sure I get eight hours of sleep, no matter what.
-                After having a glass of warm milk and doing about twenty minutes
-                of stretches before going to bed, I usually have no problems
-                sleeping until morning. I'm a backend engineer at heart, and my
-                core focus is on optimization. I'm the person who digs into slow
-                database queries, refactors code for better performance, and
-                obsesses over resource management in services.
-              </p>
+						<div
+							class="mt-5 md:mt-[25px] border-t-2 border-[#f0f4f8] pt-4 md:pt-[15px]"
+						>
+							<h3
+								class="text-[#2c3e50] mb-2 md:mb-[10px] text-lg md:text-xl font-semibold"
+							>
+								About Me
+							</h3>
+							<p
+								class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
+							>
+								My name is Võ Thành Nhân. I'm 20 years old. My
+								house is in the northeast section of Hồ Chí Minh
+								city, and I am not married. I am a student at
+								HCMUS, and I get home every day by 9 PM at the
+								latest. I don't smoke, but I occasionally drink.
+								I'm in bed by 11 PM, and make sure I get eight
+								hours of sleep, no matter what. After having a
+								glass of warm milk and doing about twenty
+								minutes of stretches before going to bed, I
+								usually have no problems sleeping until morning.
+								I'm a backend engineer at heart, and my core
+								focus is on optimization. I'm the person who
+								digs into slow database queries, refactors code
+								for better performance, and obsesses over
+								resource management in services.
+							</p>
 
-              <h3
-                class="text-[#2c3e50] mb-2 md:mb-[10px] mt-4 text-lg md:text-xl font-semibold"
-              >
-                Personal Interests
-              </h3>
-              <div
-                class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
-              >
-                <p>
-                  I do enjoy reading mangas and watching animes. These are my top
-                  4 anime/manga series recommendation:
-                </p>
-                <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
-                  <li>
-                    <a
-                      href="https://myanimelist.net/anime/31933/JoJo_no_Kimyou_na_Bouken_Part_4__Diamond_wa_Kudakenai"
-                      class="text-[#4facfe] hover:underline"
-                      target="_blank"
-                      >JoJo's Bizarre Adventure: Diamond is Unbreakable</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://bato.si/title/92192-hirayasumi"
-                      class="text-[#4facfe] hover:underline"
-                      target="_blank"
-                      >Hirayasumi</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://bato.si/title/87696-yotsuba-official"
-                      class="text-[#4facfe] hover:underline"
-                      target="_blank"
-                      >Yotsuba&!</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://myanimelist.net/anime/38883/Haikyuu_To_the_Top"
-                      class="text-[#4facfe] hover:underline"
-                      target="_blank"
-                      >Haikyu!! To the Top</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+							<h3
+								class="text-[#2c3e50] mb-2 md:mb-[10px] mt-4 text-lg md:text-xl font-semibold"
+							>
+								Personal Interests
+							</h3>
+							<div
+								class="leading-[1.6] md:leading-[1.8] text-[#34495e] text-sm md:text-base"
+							>
+								<p>
+									I do enjoy reading mangas and watching
+									animes. These are my top 4 anime/manga
+									series recommendation:
+								</p>
+								<ul
+									class="list-disc list-inside ml-4 mt-2 space-y-1"
+								>
+									<li>
+										<a
+											href="https://myanimelist.net/anime/31933/JoJo_no_Kimyou_na_Bouken_Part_4__Diamond_wa_Kudakenai"
+											class="text-[#4facfe] hover:underline"
+											target="_blank"
+											>JoJo's Bizarre Adventure: Diamond
+											is Unbreakable</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://bato.si/title/92192-hirayasumi"
+											class="text-[#4facfe] hover:underline"
+											target="_blank"
+											>Hirayasumi</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://bato.si/title/87696-yotsuba-official"
+											class="text-[#4facfe] hover:underline"
+											target="_blank"
+											>Yotsuba&!</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://myanimelist.net/anime/38883/Haikyuu_To_the_Top"
+											class="text-[#4facfe] hover:underline"
+											target="_blank"
+											>Haikyu!! To the Top</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
-    <footer class="bg-[#2c3e50] text-[#ecf0f1] text-center py-4 md:py-5">
-      <p class="text-sm md:text-base">
-        &copy; 2025 CreativeTeam. All Rights Reserved.
-      </p>
-    </footer>
+		<footer class="bg-[#2c3e50] text-[#ecf0f1] text-center py-4 md:py-5">
+			<p class="text-sm md:text-base">
+				&copy; 2025 CreativeTeam. All Rights Reserved.
+			</p>
+		</footer>
 
-    <script>
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
+		<script>
+			const mobileMenuBtn = document.getElementById('mobile-menu-btn')
+			const mobileMenu = document.getElementById('mobile-menu')
 
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        const icon = mobileMenuBtn.querySelector("i");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-times");
-      });
-    </script>
-  </body>
+			mobileMenuBtn.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden')
+				const icon = mobileMenuBtn.querySelector('i')
+				icon.classList.toggle('fa-bars')
+				icon.classList.toggle('fa-times')
+			})
+		</script>
+	</body>
 </html>
